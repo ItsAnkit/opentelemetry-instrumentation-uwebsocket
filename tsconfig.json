@@ -1,11 +1,29 @@
 {
-  "extends": "../../../tsconfig.base",
-  "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "build",
-  },
-  "include": [
-    "src/**/*.ts",
-    "test/**/*.ts"
-  ]
+	"exclude": [
+		"node_modules",
+		"test",
+		"dist",
+		"build"
+	],
+	"compilerOptions": {
+		"strict": true,
+		"strictNullChecks": true,
+		"target": "es2017",
+		"incremental": true,
+		"newLine": "LF",
+		"module": "commonjs",
+		"noEmitOnError": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"pretty": true,
+		"sourceMap": true,
+		"rootDir": ".",
+		"outDir": "build",
+	},
+	"include": [
+		"src/**/*.ts",
+		"test/**/*.ts"
+	]
 }
